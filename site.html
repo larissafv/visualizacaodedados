@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Trabalho final visualizacao de datdos</title>
+		<title>Análises dos Jogos Olímpicos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,13 +22,13 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Trabalho final de visualização de dados</strong></a>
+									<a href="index.html" class="logo"><strong>Projeto Final de Visualização de Dados</strong></a>
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1 >120 years of Olympic history: athletes and results</h1>
+										<h1 >Análises a partir de 120 anos de história dos jogos olímpicos</h1>
 									</header>
 
 									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
@@ -39,8 +39,8 @@
 										nortearam a as visualizações foram: 
 										<ul>
 
-											<li><a href="#p1.1">Existe uma idade em que se ganha mais medalhas?</a></li>
-											<li><a href="#p1.2">Como é a distribuição de idade por esporte entre os medalhistas?</a></li>
+											<li><a href="#p1">Qual é a relação da idade dos atletas com a quantidade de medalhas que ganham e com os esportes que participam?</a></li>
+											<li><a href="#p2">Como é a distribuição de idade por esporte entre os medalhistas?</a></li>
 											<li><a href="#p3">Existe um padrão específico entre altura/peso dos atletas para a maioria das modalidades?</a></li>
 											<li><a href="#p4">Ser anfitrião dos Jogos (Inverno e Verão) faz com que o país ganhe mais medalhas?</a></li>
 											
@@ -50,21 +50,17 @@
 
 									<hr class="major" />
 
-									<h2 id="p1.1">Existe uma idade em que se ganha mais medalhas?</h2>
+									<h2 id="p1">Qual é a relação da idade dos atletas com a quantidade de medalhas que ganham e com os esportes que participam?</h2>
+									<h3>Existe uma idade em que se ganha mais medalhas?</h3>
 									<span class="image main"><img src="images/grafico1.png" alt="" /></span>
 									<p>Inicialmente, foi plotado o histograma, com o objetivo de ter uma visão mais geral. A partir dele é possível perceber que os atletas ganham mais medalhas, aproximadamente aos 23 anos.
 										Já o grafico de barras abaixo permite uma análise mais aprofundada. Por ser interativo, permite visualizar, de forma organizada, quantas medalhas foram conquistadas
 										para cada idade. Além disso, a diferença entre as cores das barras e a anotação feita permitem perceber com maior facilidade a faixa etária em que se ganha mais medalhas.
 									</p>
 									<iframe src="images/grafico1.2.html" width="1200" height="600"></iframe>
-									
-									
-								
 
-									<hr class="major" />
-
-									<h2 id="p1.2">Como é a distribuição de idade por esporte entre os medalhistas?</h2>
-									<iframe src="images/grafico1.3.html" width="800" height="600"></iframe>
+									<h3>Como é a distribuição de idade por esporte entre os medalhistas?</h3>
+									<iframe src="images/grafico1.3.html" width="1200" height="600"></iframe>
 									<p></p>
 									<p></p>
 									<p>A fim de visualizar a distribuição de idade por esporte entre os medalhistas, a visualizacao escolhida inicialmente foi o boxplot, que permite, por exemplo a percepção dos outliers e, por
@@ -74,14 +70,34 @@
 									<span class="image main"><img src="images/grafico1.4.png" alt="" /></span>
 									<span class="image main"><img src="images/grafico1.5.png" alt="" /></span>
 									
+									<hr class="major" />
 
+									<h2 id="p2">Quais países receberam medalhas em cada ano e quantas cada um recebeu?</h2>
+									<iframe src="images/graficobarrasmedalhas.html" width="1200" height="600"></iframe>
+									<iframe src="images/heatmapmedalhas.html" width="1200" height="600"></iframe>
+									
 									<hr class="major" />
 
 									<h2 id="p3">Existe um padrão específico entre altura/peso dos atletas para a maioria das modalidades?</h2>
+									<p>
+										A fim de responder essa pergunta, foi feito, inicialmente, o gráfico de dispersão plotado a seguir. Nesse gráfico, temos o peso no eixo <b>x</b> e a altura no eixo <b>y</b> e cada cor indica um esporte. Vale ressaltar que cada esporte pode ser selecionado, a fim de ser visualizado individualmente.
+									</p>
+									<p>
+										A partir desse <i>plot</i>, é possível observar que há mais uma correlação positiva entre as variáveis de peso e altura do que um padrão entre nos esportes em si. Apesar disso, há algumas características interessantes que podem ser notadas, como o fato de que os atletas de <b>Basketball</b> serem mais altos e que tem alguns esportes, <b>Synchronized Swimming</b> por exemplo, em que os atletas tendem a ter pesos mais parecidos.
+									</p>
 									<iframe src="images/grafico3.1.html" width="1200" height="600"></iframe>
-									<iframe src="images/grafico3.2.html" width="1200" height="900"></iframe>
+									<p>
+										A seguir temos uma tabela com um resumo quantitativo sobre os dados de altura e peso para cada esporte, com a média (M) e o desvio padrão (STD). Com isso, é possível ver que o esporte com menor altura média é o <b>Gymnastics</b> e o com maior, é o <b>Basketball</b>, o que poderia ser esperado. Tratando-se do peso, nós temos que a modalidade <b>Tug-Of-War</b> é a com maior peso médio e a <b>Rhythmic Gymnastics</b>, é a com menor, o que não é necessariamente uma surpresa.
+									</p>
+									<iframe src="images/grafico3.2.html" width="1200" height="750"></iframe>
+									<p>
+										Os gráficos a seguir mostram a variação do peso e altura por gênero, com o passar dos anos. Essa análise nos apresenta um padrão esperado: a maior parte das atletas pesam menos e são menores que a maior parte dos atletas. É interessante perceber que, historicamente, nas primeiras olimpíadas, ainda não era permitido que as mulheres fossem atletas e, assim, não há dados para serem mostrados. Somente em 1936, em Berlim, que as mulheres foram incluídas oficialmente como atletas olímpicas, apesar que já era possível ver a presença feminina em algumas modalidades de forma extra-oficial em olimpíadas anteriores.
+									</p>
 									<iframe src="images/grafico3.3.html" width="1200" height="600"></iframe>
 									<iframe src="images/grafico3.4.html" width="1200" height="600"></iframe>
+									<p>
+										Por fim, foi possível concluir que não há necessariamente um padrão entre a altura e o peso dos atletas para a maior parte das modalidades. Apesar disso, ainda é possível observar uma correlação positiva entre essas variáveis. Além disso, características mais individuais de cada esporte puderam ser reconhecidas, como no <b>Basketball</b>, em que jogadores mais altos são geralmente encontrados.
+									</p>
 									
 									<hr class="major" />
 
@@ -101,13 +117,6 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -115,8 +124,8 @@
 									</header>
 									<ul>
 
-										<li><a href="#p1.1">Existe uma idade em que se ganha mais medalhas?</a></li>
-										<li><a href="#p1.2">Como é a distribuição de idade por esporte entre os medalhistas?</a></li>
+										<li><a href="#p1">Qual é a relação da idade dos atletas com a quantidade de medalhas que ganham e com os esportes que participam?</a></li>
+										<li><a href="#p2">Quais países receberam medalhas em cada ano e quantas cada um recebeu?</a></li>
 										<li><a href="#p3">Existe um padrão específico entre altura/peso dos atletas para a maioria das modalidades?</a></li>
 										<li><a href="#p4">Ser anfitrião dos Jogos (Inverno e Verão) faz com que o país ganhe mais medalhas?</a></li>
 										
